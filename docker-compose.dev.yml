@@ -1,0 +1,16 @@
+version: '3'
+services:
+  expressjs:
+    build: ./express_backend
+    ports:
+      - 8000:8000
+    environment:
+      - PORT=8000
+      - NODE_ENV=development
+  fastapi:
+    build: ./fastapi_backend
+    ports:
+      - 8080:8080
+    environment:
+      - PORT=8080
+      - ENVIRONMENT=development

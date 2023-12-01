@@ -1,0 +1,7 @@
+pandas
+numpy
+chempy
+scipy
+jupyter
+fastapi
+uvicorn

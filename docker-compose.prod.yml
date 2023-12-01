@@ -1,0 +1,16 @@
+version: '3'
+services:
+  expressjs:
+    build: ./express_backend
+    ports:
+      - 8000:8000
+  fastapi:
+    build: ./fastapi_backend
+    ports:
+      - 8080:8080
+    environment:
+      - PORT=8080
+  vue:
+    build: ./frontend
+    ports:
+      - 3000:8080
